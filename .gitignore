@@ -1,0 +1,27 @@
+# AL Language extension
+.alpackages/
+.vscode/
+
+# Build output
+bin/
+obj/
+
+# Dependencies
+.alpackages
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.code-workspace
+
+# Temporary files
+*.tmp
+*~
+
+# Business Central specific
+.server
+launch.json
+rad.json
