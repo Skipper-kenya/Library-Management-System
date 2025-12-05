@@ -69,6 +69,11 @@ page 50105 "Library Role Center"
                 ApplicationArea = All;
                 RunObject = page "Library Setup List";
             }
+            action("Books Reports")
+            {
+                ApplicationArea = All;
+                RunObject = report BooksReport;
+            }
         }
 
         area(Creation)

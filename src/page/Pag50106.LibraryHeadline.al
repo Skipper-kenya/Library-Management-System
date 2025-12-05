@@ -13,6 +13,11 @@ page 50106 "Library Headline"
             field(Welcome; WelcomeText)
             {
                 Caption = 'Greetings';
+
+                trigger OnDrillDown()
+                begin
+                    Message('Hello Library User! Enjoy your reading experience.');
+                end;
             }
             field("&Welcome"; Text2)
             {
