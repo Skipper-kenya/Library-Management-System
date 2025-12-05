@@ -38,10 +38,15 @@ report 50101 BooksReport
             {
 
             }
+            column(CompanyName; companyInfo.Name)
+            {
+
+            }
             column(ReportTitle; reportTitle)
             {
 
             }
+
         }
     }
     requestpage
