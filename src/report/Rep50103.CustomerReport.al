@@ -1,37 +1,30 @@
 namespace LibraryManagementSystem.LibraryManagementSystem;
+
+using Microsoft.Sales.Customer;
 using Microsoft.Foundation.Company;
 
-report 50101 BooksReport
+report 50103 CustomerReport
 {
     ApplicationArea = All;
-    Caption = 'BooksReport';
+    Caption = 'CustomerReport';
     UsageCategory = ReportsAndAnalysis;
     DefaultLayout = RDLC;
-    RDLCLayout = 'Layouts\Rep50101.BooksReport.rdlc';
+    RDLCLayout = 'Layouts\Rep50103.CustomerReport.rdlc';
 
     dataset
     {
-        dataitem(BooksTable; "Books Table")
+        dataitem(Customer; Customer)
         {
-            column(No; No)
+            column(No; "No.")
             {
             }
-            column(Title; Title)
+            column(Name; Name)
             {
             }
-            column(Author; Author)
+            column(LocationCode; "Location Code")
             {
             }
-            column(YearPublished; "Year Published")
-            {
-            }
-            column(Edition; Edition)
-            {
-            }
-            column(Genre; Genre)
-            {
-            }
-            column(Description; Description)
+            column(Age; Age)
             {
             }
             column(CompanyPicture; companyInfo.Picture)
@@ -46,8 +39,6 @@ report 50101 BooksReport
             {
 
             }
-
-
         }
     }
     requestpage
@@ -82,6 +73,4 @@ report 50101 BooksReport
         companyInfo.Get();
         companyInfo.CalcFields(companyInfo.Picture);
     end;
-
-
 }
