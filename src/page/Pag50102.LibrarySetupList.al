@@ -37,6 +37,11 @@ page 50102 "Library Setup List"
                     ToolTip = 'Specifies the value of the Author No field.', Comment = '%';
                 }
 
+                field("Borrowed Books Nos"; Rec."Borrowed Books Nos")
+                {
+                    ToolTip = 'Specifies the value of the Borrowed Books No field.', Comment = '%';
+                }
+
                 // field(SystemCreatedAt; Rec.SystemCreatedAt)
                 // {
                 //     ToolTip = 'Specifies the value of the SystemCreatedAt field.', Comment = '%';

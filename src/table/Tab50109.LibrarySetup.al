@@ -37,6 +37,13 @@ table 50109 "Library Setup"
             TableRelation = "No. Series";
             DataClassification = ToBeClassified;
         }
+        field(6; "Borrowed Books Nos"; Code[50])
+        {
+            Caption = 'Borrowed Books No';
+            TableRelation = "No. Series";
+            DataClassification = ToBeClassified;
+
+        }
     }
     keys
     {
