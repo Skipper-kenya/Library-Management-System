@@ -1,4 +1,5 @@
 namespace LibraryManagementSystem.LibraryManagementSystem;
+using Microsoft.Sales.Document;
 
 page 50113 "Library Cue"
 {
@@ -13,6 +14,7 @@ page 50113 "Library Cue"
         {
             cuegroup(Books)
             {
+
                 field("&Books"; Rec.Books)
                 {
                     Caption = 'No of Books';
@@ -35,11 +37,34 @@ page 50113 "Library Cue"
                     DrillDownPageId = "Members List";
                 }
             }
+
+
+
+
+            // cuegroup(SalesActionontainer)
+            // {
+            //     Caption = 'New Sales Invoice';
+
+            //     actions
+            //     {
+
+            //         action(ActionName)
+            //         {
+            //             RunObject = page "Sales Invoice";
+            //             Image = TileNew;
+
+            //             trigger OnAction()
+            //             begin
+
+            //             end;
+            //         }
+            //     }
+            // }
         }
     }
 
 
-
+    //initialize fields
     trigger OnOpenPage()
     begin
         Rec.Reset();
@@ -47,5 +72,7 @@ page 50113 "Library Cue"
             Rec.Init();
             Rec.Insert();
         end;
+
     end;
+
 }

@@ -109,6 +109,13 @@ page 50105 "Library Role Center"
                 Image = Report2;
                 RunObject = report BooksReport;
             }
+
+
+            action("Run Test Report")
+            {
+                ApplicationArea = All;
+                RunObject = report GenReport;
+            }
         }
 
     }
